@@ -1,0 +1,682 @@
+/* Global Styles */
+body {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1E3A8A;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #FFCC00;
+}
+
+/* Carousel */
+.carousel-inner .carousel-item img {
+    height: 400px;  /* Ensuring images fill the carousel height */
+    object-fit: cover;  /* Ensures images maintain their aspect ratio without stretching */
+}
+
+.carousel-caption h2 {
+    font-family: 'Russo One', sans-serif;  /* Adds sporty font for the title */
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.carousel-caption .btn {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    background-color: #FFB300;
+    border-radius: 30px;
+    border: none;
+}
+
+.carousel-caption .btn:hover {
+    background-color: #FF8C00;
+}
+
+/* Upcoming Matches Section */
+#upcoming-matches {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#upcoming-matches h2 {
+    font-size: 2rem;
+    color: #1E3A8A;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.upcoming-home-match {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+}
+
+.upcoming-home-match .card-title {
+    font-size: 1.8rem;
+    color: #1E3A8A;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.match-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.team-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.team-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.team-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1F1F1F;
+}
+
+.match-date {
+    font-size: 1rem;
+    color: #FFCC00;
+    font-weight: bold;
+}
+
+.match-location {
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* Center Match Review Button */
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    /* Stack buttons vertically if needed */
+    align-items: center;
+    gap: 10px;
+    /* Space between buttons */
+}
+
+.buttons .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn .btn-warning {
+    background-color: #FFCC00;
+    color: #1F1F1F;
+    border: none;
+    margin-bottom: 10px;
+    /* Ensure spacing between buttons */
+}
+
+.get-tickets {
+    background-color: #FFCC00;
+    color: #1F1F1F;
+    border: none;
+    margin-bottom: 10px;
+    /* Ensure spacing between buttons */
+}
+
+.get-tickets:hover {
+    background-color: #FFC107;
+    color: #ffffff;
+}
+
+.match-preview {
+    background-color: #1E3A8A;
+    color: #ffffff;
+    border: none;
+    margin-top: 10px;
+    /* Optional for spacing */
+    text-align: center;
+    /* Ensures proper alignment */
+}
+
+.match-preview:hover {
+    background-color: #224DAB;
+    color: #ffffff;
+}
+
+
+.cancel-match {
+    background-color: #FF0000;
+    color: #fff;
+}
+
+.cancel-match:hover {
+    background-color: #CC0000;
+}
+
+.match-info .btn {
+    margin-top: 10px;
+}
+
+.match-info .btn:first-child {
+    margin-left: auto;
+}
+
+.match-info .btn:last-child {
+    margin-right: auto;
+}
+
+.match-info .btn:disabled {
+    background-color: #ddd;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFF2D7; /* Kerala Blasters Yellow Background */
+    color: #1F1F1F; /* Dark Text Color */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #FFC72C; /* Kerala Blasters Yellow */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo.kerala-blasters-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #1F1F1F !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #E5C08A; /* Hover effect color */
+}
+
+
+
+/* Form styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #1F1F1F;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #E5C08A;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #FFC72C;
+    outline: none;
+}
+
+.btn-submit {
+    background-color: #FFC72C;
+    color: #1F1F1F;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.btn-submit:hover {
+    background-color: #E5C08A; /* Darker yellow on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #1F1F1F;
+    color: #FFF;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1F1F1F;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #E5C08A;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Submit Button Styling */
+.btn-submit {
+    display: inline-block;
+    background-color: #1E3A8A;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #b0ac35;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #1E3A8A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-logo {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar-toggler {
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #FFCC00;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #1E3A8A;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-links.show {
+        display: flex;
+    }
+}
+
+.navbar-nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #FFF9E6; /* Light background for the form */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFC72C;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #1F1F1F;
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #1F1F1F;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #E5C08A;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #FFC72C;
+    outline: none;
+}
+
+.btn-submit {
+    background-color: #FFC72C;
+    color: #1F1F1F;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.btn-submit:hover {
+    background-color: #E5C08A; /* Darker yellow on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #1F1F1F;
+    color: #FFF;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+
+
+/* Upcoming Event Section */
+.upcoming-event {
+    background-color: #FFF2D7;
+    /* Soft yellow background */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.upcoming-home-match .card-title {
+    font-size: 2rem;
+    color: #1E3A8A;
+    /* Kerala Blasters Blue */
+    font-weight: bold;
+}
+
+.match-details {
+    background-color: #c3c3c337;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.match-date {
+    font-size: 1.2rem;
+    color: #E5C08A;
+    /* Kerala Blasters Yellow */
+}
+
+.match-location {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.team-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.buttons .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.get-tickets {
+    background-color: #FFCC00;
+    color: #1F1F1F;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.get-tickets:hover {
+    background-color: #FFC107;
+    color: #ffffff;
+}
+
+.match-preview {
+    background-color: #1E3A8A;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.match-preview:hover {
+    background-color: #224DAB;
+    color: #ffffff;
+}
+
+.streaming-platforms {
+    list-style: none;
+    padding: 0;
+}
+
+.streaming-platforms li {
+    margin: 10px 0;
+}
+
+.streaming-platforms a {
+    color: #1E3A8A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.streaming-platforms a:hover {
+    color: #FFCC00;
+    text-decoration: underline;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #FFF2D7;
+    /* Kerala Blasters Yellow */
+    padding: 3rem 0;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    color: #1E3A8A;
+    /* Kerala Blasters Blue */
+    font-weight: bold;
+}
+
+.about-content {
+    background-color: #FFF9E6;
+    /* Light yellow background */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.about-content h3 {
+    font-size: 1.8rem;
+    color: #1E3A8A;
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.achievements-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.achievements-list li {
+    margin: 10px 0;
+}
+
+.achievements-list li::before {
+    content: "\2022";
+    /* Bullet symbol */
+    color: #E5C08A;
+    /* Kerala Blasters Yellow */
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: #1F1F1F;
+    color: #FFF;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 1rem;
+}
